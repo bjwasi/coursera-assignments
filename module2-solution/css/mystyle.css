@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: cursive;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px
+}
+.row{
+    width: 100%;
+}
+
+section{
+    background-color: darkgray;
+}
+
+.title1{
+    background-color: brown;
+    color: white;
+    border: 1px solid black;
+}
+.title2{
+    background-color: yellowgreen;
+    color: blue;
+    border: 1px solid black;
+}
+.title3{
+    background-color: coral;
+    color: darkblue;
+    border: 1px solid black;
+}
+
+/*Desktop version*/
+@media (min-width: 992px){
+    section > h2{
+        position: absolute;
+        padding: 1px 20px 1px 20px;
+        top: 0;
+        right: 0;
+    }
+    section > p{
+        padding: 40px 20px 10px 20px;
+    }
+    .section1,.section2,.section3{
+        float: left;
+        width: 30%;
+        border: 1px solid black;
+        position: relative;
+        margin: 0% 0% 0% 2.33%;
+    }
+}
+
+/*tablet version*/
+@media (min-width: 768px) and (max-width: 991px){
+    .section1,.section2{
+        float: left;
+        width: 46%;
+        border: 1px solid black;
+        position: relative;
+        margin: 0% 2% 0% 2%;
+    }
+    .section1 > h2, .section2 > h2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1px 20px 1px 20px; 
+    }
+    .section1 > p, .section2 > p{
+        padding: 40px 20px 10px 20px;
+    }
+    .section3{
+        float: left;
+        width: 96%;
+        border: 1px solid black;
+        position: relative;
+        margin: 2% 2% 0% 2%;
+    }
+    .section3 > h2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1px 20px 1px 20px;
+    }
+    .section3 > p{
+        padding: 40px 20px 10px 20px;
+    }
+}
+
+/*mobile version*/
+@media (max-width: 767px){
+    .section1, .section2, .section3{
+        float: left;
+        width: 88%;
+        border: 1px solid black;
+        position: relative;
+        margin: 0% 6% 3% 6%;
+    }
+    .section1 > h2, .section2 > h2, .section3 > h2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1px 20px 1px 20px;
+    }
+    .section1 > p, .section2 > p, .section3 > p{
+        padding: 40px 20px 10px 20px;
+    }
+    h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+}
