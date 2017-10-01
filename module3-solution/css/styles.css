@@ -1,0 +1,21 @@
+#header-nav {
+	background-color: #cccccc;
+	border-radius: 0;
+	border: 0;
+}
+
+.navbar-brand {
+	font-weight: bold;
+}
+
+#nav-list a {
+	color: black;
+	text-align: center;
+	font-weight: bold;
+}
+
+#main_text {
+	background-color: #cccccc;
+	margin: 5px;
+	padding: 5px 10px 5px 10px;
+}
